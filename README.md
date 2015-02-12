@@ -1,11 +1,13 @@
 GG5C: A website to connect gamers at the Claremont Colleges
 
-
 Written in: HTML/CSS, JavaScript
 
 Created for: 5C Hackathon (Spring 2014)
 
 By: Maureen Naval, Della Anjeh
+
+
+
 
 Credits:
 
