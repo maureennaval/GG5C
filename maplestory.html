@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+		<title>GG5C - MapleStory</title>
+
+		<meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+		<meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/gametable.css" />
+		<link rel="stylesheet" type="text/css" href="css/gamecss.css" />
+		<link rel="stylesheet" type="text/css" href="css/gamecomponent.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<!-- All modals added here for the demo. You would of course just have one, dynamically created -->
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Waste Time Playing MapleStory</h3>
+				<div>
+					<center><img src="http://www.troll.me/images/x-all-the-things/waste-all-the-time-play-maplestory-with-me.jpg" width="500" height="400"></center>
+					<br>
+					<button class="md-close">WASTE IT ALL!</button>
+				</div>
+			</div>
+		</div>
+		<div class="md-modal md-effect-2" id="modal-2">
+			<div class="md-content">
+			<h3>Do You Play?</h3>
+				<div>
+
+					<p align="center">Host a LAN party in your dorm room!</p>
+					<br>
+
+			<form action="gamerHandler.jsp" name="addGamer" method="post">
+
+				<strong>Name:</strong>
+					<input type="text" name="addName" maxlength="50" placeholder=" "/></br>
+
+				<strong>School:</strong>
+					<input type="text" name="addCollege" maxlength="20" placeholder=" "/></br>
+
+				<strong>Year:</strong>
+					<input type="text" name="addYear" maxlength="4" placeholder=" "/></br>
+
+				<strong>Username:</strong>
+					<input type="text" name="addUserName" maxlength="" placeholder=" "/></br>
+
+				<strong>World:</strong>
+					<input type="text" name="addWorld" maxlength="" placeholder=" "/></br>
+
+				<strong>Class:</strong>
+					<input type="text" name="addClass" maxlength="" placeholder=" "/></br>
+
+				<strong>Level:</strong>
+					<input type="text" name="addLevel" maxlength="" placeholder=" "/></br>
+
+
+				<strong>Style:</strong>
+					<input type="radio" name="addStyle" value="Casual" /><label>Casual</label>
+					<input type="radio" name="addStyle" value="Hardcore" /><label>Hardcore</label></br>
+
+					<br>
+
+				<button class="md-close" type="submit">PQ'S ALL DAY EVERY DAY</button>
+
+			</form>
+		</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="index.html"><span>Back to Homepage</span></a>
+				<!-- CREDITS
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15313"><span>Back to the Codrops Article</span></a></span> -->
+			</div>
+			<header>
+				<h1>MapleStory<span>One does not simply quit MapleStory.</span></h1>
+				<br>
+				<button class="md-trigger" data-modal="modal-1">I'm still playing.</button>
+			</header>
+			<div class="component">
+				<h2>MapleStory Players</h2>
+				<p>Who says no one plays MapleStory anymore?!?</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>School</th>
+							<th>Year</th>
+							<th>Username</th>
+							<th>World</th>
+							<th>Class</th>
+							<th>Level</th>
+							<th>Style</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<tr>
+							<td class="user-name">Maureen Naval</td>
+							<td class="user-school">Pitzer College</td>
+							<td class="user-year">2017</td>
+							<td class="user-username">maureenasaurus</td>
+							<td class="user-world">Windia</td>
+							<td class="user-class">Bowman</td>
+							<td class="user-laff">27</td>
+							<td class="user-style">Casual</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+
+			<div class="main clearfix">
+			
+				<div class="column">
+					<p>Do you play?</p>
+				</div>
+				<div class="column">
+					<button class="md-trigger" data-modal="modal-2">ADD YOURSELF TO THE LIST</button>
+				</div>
+			</div>
+			
+		</div><!-- /container -->
+		<div class="md-overlay"></div><!-- the overlay element -->
+
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
+	</body>
+</html>
